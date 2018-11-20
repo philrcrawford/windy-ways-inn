@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container">
+    <%= link_to 'Windy Ways Inn', root_path, class: "navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <%= link_to "Home", root_path, class: "nav-item nav-link" %>
+        <%= link_to "About", pages_about_path, class: "nav-item nav-link" %>
+        <%= link_to "Contact", pages_contact_path, class: "nav-item nav-link" %>
+      </div>
+    </div> <!-- div.collapse -->
+  </div> <!-- div.container -->
+</nav>
