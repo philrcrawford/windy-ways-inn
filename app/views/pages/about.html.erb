@@ -1,32 +1,67 @@
-<h2>Quintessentially Nantucket</h2>
-<p>Relaxed sophistication is the animating principle behind the union street
-  inn, where guests find a home base for Nantucket’s most exclusive
-  experiences.</p>
+<div class="page-wrapper">
+  <div class="showcase-image">
+    <%= image_tag 'about_showcase_1.png', class: "w-100" %>
+    <h1 class="showcase-banner">Quintessentially Nantucket</h1>
+  </div>
+  <div class="container-fluid">
+    <div class="about-blurb">
+      <p>Relaxed sophistication is the animating principle behind the Windy Ways
+        Inn, where guests find a home base for Nantucket’s most exclusive
+        experiences.</p>
+    </div>
 
-<h2>Getting Here</h2>
-<p>From Boston, New York City and points on Cape Cod, Nantucket is easy to reach
-  by air or ferry. The Windy Ways Inn is just a few blocks once you disembark
-  from the year-round Hy-line or seasonal Steamship Authority ferries (both
-  depart from Hyannis, Cape Cod). For guests who fly, the inn is a 10-minute
-  taxi ride. Car rentals are also available at the airport.</p>
+    <hr>
 
-<h2>By Air</h2>
-<p>Our local airport is the Nantucket Memorial Airport located at 14 airport road,
-Nantucket, MA. Jetblue Airlines, Delta Airlines, US Airways Express and United
-Airlines operate seasonal flights. Cape Air/Nantucket Airlines flies year-round
-from Hyannis and Boston Logan International Airport. Contact us in advance if
-you have questions about flying to Nantucket—there are several “in season”
-alternatives and we are happy to assist with travel plans.</p>
+    <div class="directions">
+      <h2>Getting Here</h2>
+      <p>From Boston, New York City and points on Cape Cod, Nantucket is easy to reach
+        by air or ferry. The Windy Ways Inn is just a few blocks once you disembark
+        from the year-round Hy-line or seasonal Steamship Authority ferries (both
+        depart from Hyannis, Cape Cod). For guests who fly, the inn is a 10-minute
+        taxi ride. Car rentals are also available at the airport.</p>
+    </div>
 
-<h2>By Ferry</h2>
-<p>Hy-line Cruises offers high-speed ferries (1 hour) to Nantucket Island
-  ear-round. You can find the schedule and rates on their website. The Nantucket
-  Hy-line ferry terminal is located at 33 Straight Wharf, a 4-minute walk from
-  the Windy Ways Inn. View walking directions here.</p>
+    <hr>
 
-<p>Steamship Authority offers a high-speed passenger ferry (1 hour) as well as
-  a traditional ferry (2 ¼ hours) for vehicles (reservations absolutely necessary)
-  and passengers to Nantucket Island. Schedules and rates along with information
-  for last-minute travel can be found on their website. View driving directions
-  (4 minutes) from steamboat wharf to union street inn here and walking directions
-  (7 minutes) here.</p>
+    <div class="by-air">
+      <h2>By Air</h2>
+      <p>Our local airport is the Nantucket Memorial Airport located at 14 airport road,
+      Nantucket, MA. Jetblue Airlines, Delta Airlines, US Airways Express and United
+      Airlines operate seasonal flights. Cape Air/Nantucket Airlines flies year-round
+      from Hyannis and Boston Logan International Airport. Contact us in advance if
+      you have questions about flying to Nantucket—there are several “in season”
+      alternatives and we are happy to assist with travel plans.</p>
+    </div>
+
+    <hr>
+
+    <div class="by-ferry">
+      <h2>By Ferry</h2>
+      <p>Hy-line Cruises offers high-speed ferries (1 hour) to Nantucket Island
+        ear-round. You can find the schedule and rates on their website. The Nantucket
+        Hy-line ferry terminal is located at 33 Straight Wharf, a 4-minute walk from
+        the Windy Ways Inn. View walking directions here.</p>
+
+      <p>Steamship Authority offers a high-speed passenger ferry (1 hour) as well as
+        a traditional ferry (2 ¼ hours) for vehicles (reservations absolutely necessary)
+        and passengers to Nantucket Island. Schedules and rates along with information
+        for last-minute travel can be found on their website. View driving directions
+        (4 minutes) from steamboat wharf to union street inn here and walking directions
+        (7 minutes) here.</p>
+    </div> <!-- div by-ferry end -->
+  </div> <!-- div container-fluid end -->
+  <footer>
+    <div class="row social-media-links">
+      <i class="col">
+        <%= link_to "", 'https://www.facebook.com', class: "fab fa-facebook-square" %>
+      </i>
+      <i class="col">
+        <%= link_to "", 'https://www.instagram.com', class: "fab fab fa-instagram" %>
+      </i>
+      <i class="col">
+        <%= link_to "", 'https://www.twitter.com', class: "fab fab fa-twitter" %>
+      </i>
+    </div>
+    <p>&copy; 2018 Windy Ways Inn</p>
+  </footer>
+</div> <!-- div page wrapper end -->

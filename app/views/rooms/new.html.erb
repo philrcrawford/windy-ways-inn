@@ -1,0 +1,12 @@
+<div>
+  <h2>Add Room To Database</h2>
+
+  <%= form_for(@room, :url => rooms_path(@room.id)) do |f| %>
+
+    <%= render :partial => 'form', :locals => {:f => f} %>
+
+    <div class="form-buttons">
+      <%= f.submit("Add Room to the Database") %>
+    </div>
+  <% end %>
+</div>

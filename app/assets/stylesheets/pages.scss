@@ -1,3 +1,136 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// All Page Wrappers
+
+.page-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-fluid {
+  max-width: 800px;
+}
+
+// All Page Showcases
+
+.showcase-image {
+  position: relative;
+  font-family: "Times New Roman", sans-serif;
+  text-shadow: 1px 1px #000;
+}
+
+.showcase-banner {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.showcase-banner {
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// Footer
+  footer {
+    padding: 25px 0;
+    text-align: center;
+    background-color: #28559A;
+    color: white;
+    .social-media-links {
+      width: 120px;
+      margin: auto;
+      margin-bottom: 10px;
+      i {
+        margin: 0;
+        padding: 0 5px;
+        font-size: 24px;
+        a {
+          color: white;
+        }
+        a:hover {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+
+// Index Page Content
+
+.ordinary, .location, .historic, .room-blurb, .about-blurb, .directions, .by-air,
+.by-ferry, .reservations, .catering {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  h2, h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  p {
+    text-align: justify;
+    line-height: 1.75em;
+  }
+}
+
+.location {
+  h3 {
+    margin-top: 30px;
+  }
+}
+
+.reservations, .catering {
+  h3 {
+    font-size: 18px;
+  }
+}
+
+.historic_gallery {
+  margin-top: 24px;
+}
+
+// Contact Page Content
+
+.contact {
+  max-width: 800px;
+  text-align: center;
+}
+
+.button {
+  background-color: #28559A !important;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .showcase-banner {
+    font-size: 50px;
+  }
+  .ordinary, .location, .historic {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    h2, h3 {
+      font-size: 25px;
+    }
+    p {
+      line-height: 2em;
+      font-size: 18px;
+    }
+  }
+  .location {
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .showcase-banner {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .showcase-banner {
+    font-size: 89px;
+  }
+}

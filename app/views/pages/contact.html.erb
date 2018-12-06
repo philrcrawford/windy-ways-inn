@@ -1,19 +1,46 @@
-<h1>Contact</h1>
-<h2>Reservations</h2>
-<h3>By Phone:</h3>
-<p>555-555-5555</p>
-<p>Our Reservations Office is open Monday – Friday from 9:00 a.m. to 5:00 p.m.
-     (USA East Coast Time).  If you call off-hours and leave a message, please
-     include your day and evening phone numbers, so we may respond to your
-     reservation request or inquiry.</p>
-<h3>By E-Mail:</h3>
-<p>You can email us at reservations@windywaysinn.com, or you can send us a message here:</p>
+<div class="page-wrapper">
+  <div class="showcase-image">
+    <%= image_tag 'contact_showcase_1.png', class: "w-100" %>
+    <h1 class="showcase-banner">Contact Us</h1>
+  </div>
+  <div class="container-fluid">
+    <div class="reservations">
+      <h2>Reservations</h2>
+      <h3>By Phone: 555-555-5555</h3>
+      <p>Our Reservations Office is open Monday – Friday from 9:00 a.m. to 5:00 p.m.
+           (USA East Coast Time).  If you call off-hours and leave a message, please
+           include your day and evening phone numbers, so we may respond to your
+           reservation request or inquiry.</p>
+      <h3>By E-Mail:</h3>
+      <p>You can email us at reservations@windywaysinn.com, or you can send us a message here:</p>
+      <%= render 'form' %>
+    </div>
 
-<h2>Catering</h2>
-<h3>By Phone:</h3>
-<p>555-555-5555</p>
-<p>We offer full-service catering for any event, large or small. We understand
-  your needs and we will cater the food to satisfy the biggerst criteria of them
-  all, both look and taste.</p>
-<h3>By E-mail:</h3>
-<p>You can email us at catering@windywaysinn.com, or you can send us a message here:</p>
+    <hr>
+
+    <div class="catering">
+      <h2>Catering</h2>
+      <h3>By Phone: 555-555-5556</h3>
+      <p>Our kitchen is at your disposal.  If you are hosting an event and need to
+      make any special requests, please let us know.</p>
+      <h3>By E-mail:</h3>
+      <p>You can email us at catering@windywaysinn.com, or you can send us a message here:</p>
+      <%= render 'form' %>
+    </div>
+
+  </div> <!-- div container-fluid end -->
+  <footer>
+    <div class="row social-media-links">
+      <i class="col">
+        <%= link_to "", 'https://www.facebook.com', class: "fab fa-facebook-square" %>
+      </i>
+      <i class="col">
+        <%= link_to "", 'https://www.instagram.com', class: "fab fab fa-instagram" %>
+      </i>
+      <i class="col">
+        <%= link_to "", 'https://www.twitter.com', class: "fab fab fa-twitter" %>
+      </i>
+    </div>
+    <p>&copy; 2018 Windy Ways Inn</p>
+  </footer>
+</div> <!-- div page wrapper end -->

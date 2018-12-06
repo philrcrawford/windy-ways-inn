@@ -1,0 +1,47 @@
+<div class="page-wrapper">
+  <div class="showcase-image">
+    <%= image_tag 'rooms_showcase_1.png', class: "w-100" %>
+    <h1 class="showcase-banner">Luxurious Rooms</h1>
+  </div>
+  <div class="container-fluid">
+    <div class="room-blurb">
+      <h2>Uncompromising Style</h2>
+      <p>Awake to the soft cross-breeze and sparkling daylight and let your eyes wander.
+        Rich patterns, a hint of greenery, soft pastels and one-of-a-kind artwork come
+        into focus. This moment of exquisite stillness begins every day at the union
+        street inn. Luxury bath amenities by Malin + Goetz delight the senses while
+        divine Frette and Matouk linens elevate your sleep experience. Moored in crisp,
+        traditional Nantucket style, each of our 12 guest rooms is a showpiece with its
+        own unique character.</p>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <% @rooms.each do |room| %>
+        <div class="col-sm-6 mb-4">
+          <%= link_to image_tag(room.image, class: "w-100 room-list-image"), room_path(room.id) %>
+          <div class="room-number">
+            <p><%= room.name %></p>
+            <h4>No. <%= room.id %></h4>
+            <p><%= room.price %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div> <!-- div container-fluid end -->
+  <footer>
+    <div class="row social-media-links">
+      <i class="col">
+        <%= link_to "", 'https://www.facebook.com', class: "fab fa-facebook-square" %>
+      </i>
+      <i class="col">
+        <%= link_to "", 'https://www.instagram.com', class: "fab fab fa-instagram" %>
+      </i>
+      <i class="col">
+        <%= link_to "", 'https://www.twitter.com', class: "fab fab fa-twitter" %>
+      </i>
+    </div>
+    <p>&copy; 2018 Windy Ways Inn</p>
+  </footer>
+</div> <!-- div page wrapper end -->

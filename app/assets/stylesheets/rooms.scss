@@ -1,0 +1,92 @@
+// Rooms Page
+
+.room-back-link {
+  a {
+    color: black;
+  }
+  a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  }
+}
+.room-list-image {
+  position: relative;
+}
+.room-number {
+  position: absolute;
+  bottom: 0%;
+  margin: 0;
+  width: 100px;
+  height: 100px;
+  background: #631a00;
+  text-align: center;
+  color: white;
+  p {
+    font-size: 12px;
+    margin: 0;
+  }
+  h4 {
+    font-size: 30px;
+    margin: 0;
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+  }
+  p:last-child {
+    position: absolute;
+    bottom: 5%;
+    left: 33%;
+  }
+}
+
+// Individual Room Page
+
+.room-info {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  h2, h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  p {
+    text-align: center;
+    line-height: 1.75em;
+  }
+}
+
+.features {
+  margin-bottom: 50px;
+  h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  li {
+    font-size: 14px;
+  }
+  .features-1 {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .features {
+    .features-1 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .rooms-showcase-banner {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .rooms-showcase-banner {
+    font-size: 100px;
+  }
+}

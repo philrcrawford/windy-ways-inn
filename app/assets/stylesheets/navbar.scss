@@ -1,0 +1,22 @@
+nav {
+  font-family: "Times New Roman", sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-size: 18px;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  i {
+    color: black;
+    &:hover {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  &:focus {
+    outline: 0;
+  }
+}

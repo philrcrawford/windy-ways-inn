@@ -1,0 +1,67 @@
+<div class="page-wrapper">
+  <div class="container-fluid">
+    <div class="my-2 room-back-link">
+      <%= link_to '<< Back To Rooms', rooms_path %>
+    </div>
+    <%= image_tag @room.image, class: "w-100" %>
+    <div class="room-info">
+      <h2><%= @room.name %></h2>
+      <p>Per nightly rate: $<%= @room.price %></p>
+    </div>
+    <div class="row features">
+      <div class="col-sm-6 features-1">
+        <h4>Features</h4>
+        <ul>
+          <li>300 sq.ft</li>
+          <li>King high poster bed</li>
+          <li>Second floor corner</li>
+          <li>Fireplace</li>
+          <li>TV's in sitting room and bedroom</li>
+          <li>Wet Bar</li>
+          <li>Compact Fridge</li>
+          <li>Walk-in shower</li>
+        </ul>
+      </div>
+
+      <div class="col-sm-6 features-2">
+        <h4>Inn Amenities</h4>
+        <ul>
+          <li>Full, cooked-to-order breakfast</li>
+          <li>Beach bags (towels, bottled water, magazines)</li>
+          <li>Frette linens</li>
+          <li>Matouk Duvets and bathrobes</li>
+          <li>Bath amenities</li>
+          <li>Bottled spring water</li>
+          <li>Breakfast in bed, patio, dining room</li>
+          <li>Free Wifi</li>
+          <li>Hairdryers</li>
+          <li>AM/FM radio</li>
+          <li>Iron, ironing board</li>
+          <li>Makeup mirror</li>
+          <li>Lending library (books, magazines, newspapers</li>
+          <li>Afternoon treats</li>
+        </ul>
+        </div>
+    </div> <!-- div features end -->
+
+    <hr>
+
+    <div class="row">
+
+    </div>
+  </div> <!-- div container fluid end -->
+  <footer>
+    <div class="row social-media-links">
+      <i class="col">
+        <%= link_to "", 'https://www.facebook.com', class: "fab fa-facebook-square" %>
+      </i>
+      <i class="col">
+        <%= link_to "", 'https://www.instagram.com', class: "fab fab fa-instagram" %>
+      </i>
+      <i class="col">
+        <%= link_to "", 'https://www.twitter.com', class: "fab fab fa-twitter" %>
+      </i>
+    </div>
+    <p>&copy; 2018 Windy Ways Inn</p>
+  </footer>
+</div> <!-- div page wrapper end -->

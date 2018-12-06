@@ -1,2 +1,77 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<div class="page-wrapper">
+  <div class="showcase-image">
+    <div id="showcaseCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag 'showcase_1.png', class: "d-block w-100" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag 'showcase_2.png', class: "d-block w-100" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag 'showcase_3.png', class: "d-block w-100" %>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="showcase-banner">Windy Ways Inn</h1>
+  </div>
+
+
+  <div class="container-fluid index">
+    <div class="ordinary">
+      <h2>30 Miles From Ordinary</h2>
+      <p>Welcome to Windy Ways Inn—Nantucket’s standard bearer for exquisite interiors,
+        impeccable service and exclusive experiences. Guests from New York City, New
+        England and around the world travel by air and sea to unwind in style under our
+        historic roof. Our award-winning inn makes the perfect home base for romantic
+        retreats to the island in spring, summer and autumn. Plan your visit and see
+        what’s new to do, taste and enjoy on Nantucket.</p>
+    </div>
+
+    <hr>
+
+    <div class="location">
+      <div class="row justify-content-center">
+        <%= image_tag 'old_nantucket_map.png', class: "col-md-6 h-100" %>
+        <div class="col-md-6">
+          <h3>Amazing Location</h3>
+          <p>Located just off Main Street, Windy Ways Inn is conveniently located to
+          give you easy access to just about all Nantucket has to offer!  Main Street,
+          the wharf, Children's Beach and Brant Point are an easy walk away.  If you
+        need to cover more distance, the island shuttle bus stop is right around the block!</p>
+        </div>
+      </div>
+    </div> <!-- div location end -->
+
+    <hr>
+
+    <div class="historic">
+      <h2>Our Historic Building</h2>
+      <p>Our building has been an integral part of Nantucket's history.  In the
+      1700's it served as a whaling factory.  During 1845-1897 it was home to the
+        mayor.  For the early part of the 20th century the town used it as a shelter
+        for the town workers during the winter.  In 1957 it became the Windy Ways Inn
+        you see today.</p>
+      <div class="row historic_gallery">
+        <%= image_tag 'interior_1.png', class: "col-sm-6 h-100 mb-4" %>
+        <%= image_tag 'interior_2.png', class: "col-sm-6 h-100 mb-4" %>
+      </div>
+    </div> <!-- div historic end -->
+
+  </div> <!-- div container-fluid end -->
+  <footer>
+    <div class="row social-media-links">
+      <i class="col">
+        <%= link_to "", 'https://www.facebook.com', class: "fab fa-facebook-square" %>
+      </i>
+      <i class="col">
+        <%= link_to "", 'https://www.instagram.com', class: "fab fab fa-instagram" %>
+      </i>
+      <i class="col">
+        <%= link_to "", 'https://www.twitter.com', class: "fab fab fa-twitter" %>
+      </i>
+    </div>
+    <p>&copy; 2018 Windy Ways Inn</p>
+  </footer>
+</div> <!-- div page wrapper end -->
